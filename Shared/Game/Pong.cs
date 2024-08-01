@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
 
-namespace Pong;
+namespace Shared.Game;
 
-public class Program
+public class Pong
 {
-    private static void Main(string[] args)
+    public async Task Run()
     {
         var width = Console.WindowWidth;
         var height = Console.WindowHeight;
@@ -185,12 +185,12 @@ public class Program
             return x * slope + yIntercept;
         }
     }
+}
 
-    public class Ball
-    {
-        public float dX;
-        public float dY;
-        public float X;
-        public float Y;
-    }
+public class Ball
+{
+    public float dX;
+    public float dY;
+    public float X;
+    public float Y;
 }

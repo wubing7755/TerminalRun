@@ -1,5 +1,5 @@
 ﻿using Shared.LetCode;
-
+using Shared.Game;
 namespace TerminalRun.Cmd;
 
 /// <summary>
@@ -16,7 +16,10 @@ public static class CS
     {
         var solution = new Solution();
 
-        solution.LinkNodeTest();
+        //solution.LinkNodeTest();
+
+        var pong = new Pong();
+        pong.Run();
 
         return "";
     }
