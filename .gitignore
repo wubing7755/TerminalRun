@@ -1,0 +1,60 @@
+# 忽略 Visual Studio 文件
+.vs/
+.vscode/
+
+# 忽略编译输出文件
+bin/
+obj/
+
+# 忽略用户特定的 Visual Studio 文件
+*.user
+*.suo
+
+# 忽略 NuGet 包
+*.nupkg
+*.snupkg
+.nuget/
+
+# 忽略构建结果
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# 忽略发布输出
+*.PublishProfiles/
+
+# 忽略调试和日志文件
+*.log
+*.tlog
+*.log.*
+
+# 忽略临时文件
+*.tmp
+*.temp
+*.tmp.*
+~$*
+*~.nib
+
+# 忽略配置文件
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+
+# 忽略 Rider IDE 文件
+.idea/
+.idea/*
+
+# 忽略 Visual Studio Code 文件
+.vscode/
+.vscode/*
+
+# 忽略扩展工具生成的文件
+*.vsix
+*.vsixmanifest
+
+# 忽略 Resharper 文件
+_ReSharper.Caches/
+
+# 忽略其他可能的临时文件
+*.swp
+*.swo

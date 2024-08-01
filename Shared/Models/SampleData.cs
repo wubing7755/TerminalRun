@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Shared.Models
+{
+    public static class SampleData
+    {
+        private static List<User> _userData;
+
+        // List will be initialized with data the first time the
+        // static property is accessed:
+        public static List<User> Users => _userData ??= CreateInitialUsers();
+
+        // Some test data:
+        public static List<User> CreateInitialUsers()
+        {
+            var initialUsers = new List<User>()
+            {
+                new User { Id = 1, FirstName = "John", LastName = "Lennon" },
+                new User { Id = 2, FirstName = "Paul", LastName = "McSuc" },
+                new User { Id = 3, FirstName = "George", LastName = "Harrison" },
+                new User { Id = 4, FirstName = "Ringo", LastName = "Starr" },
+            };
+            return initialUsers;
+        }
+
+        // We'll use this for our examples:
+        public class User
+        {
+            public int Id { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+        }
+    }
+}
